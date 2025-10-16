@@ -11,7 +11,7 @@ async function carregarPersonagens() {
             throw new Error("Erro na requisição: " + resposta.status);
         }
         const dados = await resposta.json();
-        const personagens = dados.results.slice(0, 40);
+        const personagens = dados.results.slice(0, 10);
 
         galeria.innerHTML = "";
 
